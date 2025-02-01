@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blogify Admin</title>
+    <link rel="icon" href="/Assets/Logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="blog-admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="/Assets/Logo.png" alt="Blogify Logo" height="40px" />
+          <h1>Blogify</h1>
+        </div>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="blog-content.html">Blogs</a>
+          <a href="blog-admin.html">Write</a>
+          <a href="categories.html">Categories</a>
+        </div>
+        <div class="nav-buttons">
+          <a href="#" class="btn btn-login" onclick="openLoginDialog()"
+            >Login</a
+          >
+          <a href="blog-admin.html" class="btn btn-primary">Start Writing</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="admin-panel">
+      <h2>Blog Admin Dashboard</h2>
+
+      <form id="blogForm">
+        <div class="form-group">
+          <label for="title">Blog Title</label>
+          <input type="text" id="title" required />
+        </div>
+
+        <div class="form-group">
+          <label for="excerpt">Blog Excerpt</label>
+          <textarea id="excerpt" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="content">Blog Content</label>
+          <textarea id="content" rows="6" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Featured Image</label>
+          <input type="file" id="image" accept="image/*" required />
+        </div>
+
+        <button type="submit">Publish Post</button>
+      </form>
+
+      <div class="post-list" id="postList"></div>
+    </div>
+    <button id="scrollBtn" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="blog-admin.js"></script>
+  </body>
+</html>
