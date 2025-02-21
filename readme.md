@@ -41,16 +41,22 @@ A modern blogging platform that allows users to create, share and discover blog 
 ## Project Structure
 
 ```text
-├── Assets/
-├── blog-admin.css
-├── blog-admin.html
-├── blog-admin.js
-├── blog-content.css
-├── blog-content.html
-├── blog-content.js
-├── categories.css
-├── categories.html
-├── categories.js
-├── home.css
-├── home.html
-└── home.js
+│── public/                
+│   ├── assets/           
+│   ├── css/              
+│   │   ├── blog-admin.css
+│   │   ├── blog-content.css
+│   │   ├── categories.css
+│   │   ├── home.css
+│   ├── js/               
+│   │   ├── blog-admin.js
+│   │   ├── blog-content.js
+│   │   ├── categories.js
+│   │   ├── home.js
+│   ├── index.html        
+│   ├── blog-admin.html
+│   ├── blog-content.html
+│   ├── categories.html
+│── README.md              
+
+```
